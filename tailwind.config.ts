@@ -61,6 +61,21 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Factory Dashboard Status Colors
+				status: {
+					safe: 'hsl(var(--status-safe))',
+					warning: 'hsl(var(--status-warning))',
+					critical: 'hsl(var(--status-critical))'
+				},
+				// Factory Components
+				metric: {
+					DEFAULT: 'hsl(var(--metric-bg))',
+					border: 'hsl(var(--metric-border))'
+				},
+				alert: {
+					DEFAULT: 'hsl(var(--alert-bg))',
+					border: 'hsl(var(--alert-border))'
 				}
 			},
 			borderRadius: {
