@@ -1,73 +1,125 @@
-# Welcome to your Lovable project
+# Factory Pulse Pro
 
-## Project info
+Smart Factory Health Dashboard - A comprehensive industrial monitoring platform for real-time factory operations analysis.
 
-**URL**: https://lovable.dev/projects/c13a77f9-b629-4c54-817f-227315ffce31
+## Project Overview
 
-## How can I edit this code?
+Factory Pulse Pro provides real-time monitoring and analytics for industrial operations, featuring:
 
-There are several ways of editing your application.
+- **Live Metrics Dashboard** - Real-time monitoring of production KPIs
+- **Alert Management** - Intelligent alerting system for operational issues
+- **Maintenance Tracking** - Comprehensive maintenance logs and scheduling
+- **AI Assistant** - Smart recommendations and insights
+- **Role-Based Access** - Customized views for different user roles
 
-**Use Lovable**
+## Development Setup
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c13a77f9-b629-4c54-817f-227315ffce31) and start prompting.
+### Prerequisites
 
-Changes made via Lovable will be committed automatically to this repo.
+- Node.js (v18 or higher)
+- npm or yarn package manager
 
-**Use your preferred IDE**
+### Installation
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+```bash
+# Clone the repository
+git clone <repository-url>
+cd factory-pulse-pro
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+# Install dependencies
+npm install
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Available Scripts
 
-**Use GitHub Codespaces**
+- `npm run dev` - Start development server with hot reload
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint code analysis
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Technology Stack
 
-## What technologies are used for this project?
+- **Frontend Framework**: React 18 with TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui component library
+- **State Management**: TanStack Query
+- **Routing**: React Router DOM
+- **Icons**: Lucide React
+- **Charts**: Recharts
 
-This project is built with:
+## Project Structure
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```
+src/
+├── components/          # Reusable UI components
+│   ├── ui/             # Base UI components (shadcn/ui)
+│   ├── AIAssistantPanel.tsx
+│   ├── AlertsPanel.tsx
+│   ├── LiveMetricsPanel.tsx
+│   └── MaintenanceLogsTable.tsx
+├── hooks/              # Custom React hooks
+├── lib/                # Utility functions and configurations
+├── pages/              # Application pages/routes
+└── main.tsx           # Application entry point
+```
 
-## How can I deploy this project?
+## Features
 
-Simply open [Lovable](https://lovable.dev/projects/c13a77f9-b629-4c54-817f-227315ffce31) and click on Share -> Publish.
+### Live Metrics
+- Real-time production monitoring
+- Equipment efficiency tracking
+- Performance KPI visualization
 
-## Can I connect a custom domain to my Lovable project?
+### Alert System
+- Automated alert generation
+- Priority-based categorization
+- Real-time notifications
 
-Yes, you can!
+### Maintenance Management
+- Equipment maintenance logs
+- Scheduled maintenance tracking
+- Historical maintenance data
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### AI Assistant
+- Intelligent operational insights
+- Predictive maintenance recommendations
+- Performance optimization suggestions
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## Development Guidelines
+
+- Follow TypeScript best practices
+- Use semantic commit messages
+- Maintain component modularity
+- Write comprehensive tests
+- Follow accessibility standards
+
+## Deployment
+
+The application can be deployed to any static hosting service:
+
+1. Build the project: `npm run build`
+2. Deploy the `dist` folder to your hosting provider
+
+Popular deployment options:
+- Vercel
+- Netlify
+- AWS S3 + CloudFront
+- Azure Static Web Apps
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Run tests and linting
+5. Submit a pull request
+
+## License
+
+This project is licensed under the MIT License.
